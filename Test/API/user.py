@@ -59,12 +59,12 @@ def testar_alterar_user():
 
 
 def testar_excluir_user():
-    user_name = 'maju'
+    user_name1 = 'maju'
     status_code_esperado = 200
     type_esperado = "unknown"
     message_esperado = "maju"
 
-    resultado_obtido = requests.delete(url=base_url + '/user/' + user_name,
+    resultado_obtido = requests.delete(url=base_url + '/user/' + user_name1,
                                     data=open('C:\\Users\\Uelton Gomes\\PycharmProjects\\pythonProject\\lista07_user\\vendors\\user2.json','rb'),
                                     headers=headers
     )
